@@ -13,7 +13,7 @@
             ]
             var url = new URL(window.location.href);
             var epNum = url.searchParams.get('ep');
-            location.href = episodes[epNum-1];
+            window.location.replace(episodes[epNum-1]);
         </script>
     </body>
 </html>
