@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REDIRECTOR</title>
+    </head>
+    <body>
+        <script>
+            var episodes = [
+                'https://www.google.com',
+                'https://www.facebook.com',
+                'https://www.soundcloud.com',
+                'https://www.anghami.com',
+            ]
+            var url = new URL(window.location.href);
+            var epNum = url.searchParams.get('ep');
+            window.location.href = episodes[epNum-1];
+        </script>
+    </body>
+</html>
